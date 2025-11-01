@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp">
+
+    <TextView
+        android:id="@+id/tv_theatreName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="43dp"
+        android:layout_marginLeft="43dp"
+        android:layout_marginTop="10dp"
+        android:text="Theatre Name"
+        android:textColor="#000000"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/tv_theatreAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_theatreName"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/location_icon"
+        android:layout_toRightOf="@+id/location_icon"
+        android:text="Theatre Address" />
+
+    <ImageView
+        android:id="@+id/location_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_theatreName"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="43dp"
+        android:layout_marginLeft="43dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/location_main_theme_png" />
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/movies_drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+        <!-- Your content goes here -->
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            tools:context=".MoviesBtmNav">
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_movies"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center_horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:menu="@menu/toolbar"
+                app:navigationIcon="@drawable/ic_edit_location_black_24dp"
+                app:titleTextColor="#FFFFFF">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="MovieTicks"
+                    android:textColor="#FFFF"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <!--<ImageView
+                    android:layout_width="140dp"
+                    android:layout_height="28dp"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+
+                    android:background="@drawable/dpk_movielicks_logo_without_camera"
+                    android:textColor="#FFFF"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />-->
+            </androidx.appcompat.widget.Toolbar>
+
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tablayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar_movies"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/curve_toolbar"
+                app:tabGravity="fill"
+                app:tabIndicatorColor="@android:color/white"
+                app:tabIndicatorHeight="2dp"
+                app:tabSelectedTextColor="@android:color/white"
+                app:tabTextColor="#FDDAC0" />
+            <FrameLayout
+                android:id="@+id/FrameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp">
+
+            </FrameLayout>
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/TabViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="601dp"
+                android:layout_above="@+id/bottomNav"
+                android:layout_below="@+id/tablayout"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="0dp"
+                app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
+
+
+        </RelativeLayout>
+
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/movies_nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start|left"
+        app:headerLayout="@layout/navigation_header"/>
+       <!-- app:menu="@menu/navigation_items"-->
+</androidx.drawerlayout.widget.DrawerLayout>

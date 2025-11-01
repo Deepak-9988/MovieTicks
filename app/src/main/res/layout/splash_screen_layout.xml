@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="fill_parent">
+
+    <ImageView android:id="@+id/logo_splashscreen"
+        android:layout_width="480dp"
+        android:layout_height="480dp"
+       android:layout_margin="30dp"
+        android:src="@drawable/dpk_movie_ticks_logo_final"
+        android:layout_gravity="center"/>
+
+    <!--<com.agrawalsuneet.dotsloader.loaders.LazyLoader
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo_splashscreen"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-148dp"
+        android:layout_marginBottom="20dp"
+        app:lazyloader_animDur="800"
+        app:lazyloader_dotsDist="10dp"
+        app:lazyloader_dotsRadius="10dp"
+        app:lazyloader_firstDelayDur="150"
+        app:lazyloader_firstDotColor="@color/white"
+        app:lazyloader_interpolator="@android:anim/decelerate_interpolator"
+        app:lazyloader_secondDelayDur="300"
+        app:lazyloader_secondDotColor="@color/white"
+        app:lazyloader_thirdDotColor="@color/white" />
+-->
+    <com.agrawalsuneet.dotsloader.loaders.TashieLoader
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo_splashscreen"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-148dp"
+        android:layout_marginBottom="20dp"
+
+        app:tashieloader_animDelay="150"
+        app:tashieloader_animDur="250"
+        app:tashieloader_dotsColor="@color/white"
+        app:tashieloader_dotsDist="5dp"
+        app:tashieloader_dotsRadius="20dp"
+        app:tashieloader_interpolator="@android:anim/accelerate_interpolator"
+        app:tashieloader_noOfDots="6" />
+
+</RelativeLayout>

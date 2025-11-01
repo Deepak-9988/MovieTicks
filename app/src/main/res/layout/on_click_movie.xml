@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OnClickMovie">
+  <!--  <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">-->
+
+<LinearLayout
+    android:id="@+id/ll_trailer"
+    android:background="@drawable/tv_border"
+    android:layout_width="match_parent"
+    android:layout_margin="2dp"
+    android:layout_height="wrap_content">
+            <fragment
+                android:id="@+id/youtube_fragment"
+                android:name="com.google.android.youtube.player.YouTubePlayerSupportFragmentX"
+                android:layout_margin="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+</LinearLayout>
+            <RelativeLayout
+                android:id="@+id/mInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/mainTheme2"
+                android:background="@drawable/tv_border"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_below="@id/ll_trailer">
+
+                <ImageView
+                    android:id="@+id/MovieImg"
+                    android:layout_width="68dp"
+                    android:layout_height="88dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="9dp"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginBottom="10dp"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/Mname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="9dp"
+                    android:layout_toEndOf="@+id/MovieImg"
+                    android:layout_toRightOf="@+id/MovieImg"
+                    android:singleLine="true"
+                    android:text="TextView"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textSize="16dp"
+                    tools:layout_editor_absoluteX="76dp"
+                    tools:layout_editor_absoluteY="66dp" />
+
+                <TextView
+                    android:id="@+id/mDuration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="29dp"
+                    android:layout_marginTop="80dp"
+                    android:textColor="@color/mainTheme"
+                    android:layout_toEndOf="@+id/mExperience"
+                    android:layout_toRightOf="@+id/mExperience"
+                    android:background="@drawable/tv_border"
+                    android:text="2:24:52"
+                    android:textSize="7dp"
+                    tools:layout_editor_absoluteX="166dp"
+                    tools:layout_editor_absoluteY="229dp" />
+
+
+                <TextView
+                    android:id="@+id/mExperience"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="29dp"
+                    android:layout_marginTop="80dp"
+                    android:textColor="@color/mainTheme"
+                    android:layout_toEndOf="@+id/mCertificate"
+                    android:layout_toRightOf="@+id/mCertificate"
+                    android:background="@drawable/tv_border"
+                    android:text="2D"
+                    android:textSize="7dp"
+                    tools:layout_editor_absoluteX="166dp"
+                    tools:layout_editor_absoluteY="229dp" />
+
+                <TextView
+                    android:id="@+id/mCertificate"
+                    android:layout_width="18dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginRight="0dp"
+                    android:textColor="@color/mainTheme"
+                    android:layout_toEndOf="@+id/MovieImg"
+                    android:layout_toRightOf="@+id/MovieImg"
+                    android:background="@drawable/tv_border"
+                    android:gravity="center_horizontal"
+                    android:singleLine="true"
+                    android:text="Certificate"
+                    android:textAlignment="center"
+                    android:textSize="7dp"
+                    tools:layout_editor_absoluteX="166dp"
+                    tools:layout_editor_absoluteY="229dp" />
+
+                <TextView
+                    android:id="@+id/mlanguage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="58dp"
+                    android:layout_toEndOf="@+id/MovieImg"
+                    android:layout_toRightOf="@+id/MovieImg"
+                    android:background="@drawable/tv_border"
+                    android:text="Language"
+                    android:textColor="@color/mainTheme"
+                    android:textSize="9dp"
+                    tools:layout_editor_absoluteX="166dp"
+                    tools:layout_editor_absoluteY="229dp" />
+
+                <TextView
+                    android:id="@+id/Mcast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="36dp"
+                    android:layout_toEndOf="@+id/MovieImg"
+                    android:layout_toRightOf="@+id/MovieImg"
+                    android:singleLine="true"
+                    android:text="TextView"
+                    android:textSize="12dp"
+                    tools:layout_editor_absoluteX="166dp"
+                    tools:layout_editor_absoluteY="229dp" />
+
+
+
+            </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_book_tickets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/mainTheme"
+        android:background="@drawable/tv_border"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Book Tickets" />
+       <!-- </LinearLayout>
+    </ScrollView>-->
+</RelativeLayout>

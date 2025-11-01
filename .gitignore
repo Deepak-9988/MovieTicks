@@ -1,0 +1,9 @@
+# Android Studio / Gradle
+*.iml
+.gradle/
+build/
+local.properties
+.idea/
+
+# Firebase config
+app/google-services.json

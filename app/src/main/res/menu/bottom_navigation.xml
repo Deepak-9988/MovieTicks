@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/movies"
+    android:title="Movies"
+    android:icon="@drawable/movie"/>
+    <item
+        android:id="@+id/theatres"
+        android:title="Theatres"
+        android:icon="@drawable/theatre2"/>
+    <item
+        android:id="@+id/profile"
+        android:title="Profile"
+        android:icon="@drawable/ic_person_black_24dp"/>
+</menu>

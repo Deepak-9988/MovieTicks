@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+      <!--  <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FF6D00"
+            android:gravity="center_horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:menu="@menu/toolbar"
+            app:navigationIcon="@drawable/ic_edit_location_black_24dp"
+            app:titleTextColor="#FFFFFF">
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+
+                android:text="MovieTicks"
+                android:textColor="#FFFF"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </androidx.appcompat.widget.Toolbar>
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="0dp"
+        android:background="#FF6D00"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@android:color/white"
+        app:tabIndicatorHeight="2dp"
+        app:tabSelectedTextColor="#FFFFFF"
+        app:tabTextColor="#FDDAC0" />  -->
+     <FrameLayout
+        android:id="@+id/FrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomNav"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp">
+
+     </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fullScreenFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp">
+
+    </FrameLayout>
+        <!--<androidx.viewpager.widget.ViewPager
+             android:id="@+id/TabViewPager"
+             android:layout_width="427dp"
+             android:layout_height="601dp"
+             android:layout_above="@+id/bottomNav"
+             android:layout_below="@+id/tablayout"
+             android:layout_marginTop="0dp"
+             android:layout_marginBottom="0dp"
+             app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
+-->
+
+
+         <com.google.android.material.bottomnavigation.BottomNavigationView
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:id="@+id/bottomNav"
+         android:layout_alignParentBottom="true"
+         android:background="@color/colorPrimary"
+         app:menu="@menu/bottom_navigation"
+             />
+
+ </RelativeLayout>

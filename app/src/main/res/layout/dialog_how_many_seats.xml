@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rl_wholeView"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+   <!-- <TextView
+        android:layout_width="43dp"
+        android:layout_height="wrap_content"
+        android:text="X"
+        android:textSize="30dp"
+        android:textColor="#000000"
+        android:layout_alignParentRight="true"
+
+        />-->
+
+    <TextView
+        android:id="@+id/tv_howManySeats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:textSize="15dp"
+
+        android:text="How many seats?"
+        android:textColor="@color/mainTheme"
+        />
+    <ImageView
+        android:id="@+id/vehicle_imageView"
+        android:layout_below="@id/tv_howManySeats"
+        android:layout_margin="30dp"
+        android:layout_width="200dp"
+        android:background="@drawable/location_main_theme_png"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:id="@+id/ll_number_of_seats"
+        android:layout_below="@id/vehicle_imageView"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="20dp"
+        android:weightSum="10"
+        android:layout_height="wrap_content">
+
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_selectSeats"
+        android:layout_below="@id/ll_number_of_seats"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:background="@drawable/tv_border_selected"
+        android:layout_height="wrap_content"
+        android:text="Select Seats"/>
+
+</RelativeLayout>

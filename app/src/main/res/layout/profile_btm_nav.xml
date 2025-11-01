@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/ProfileItems"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/divider_shape"
+            android:showDividers="middle"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/ProfileInfo"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="16.0dip"
+                android:background="@color/colorPrimary"
+                android:paddingRight="15.0dip"
+                android:paddingBottom="30dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="55.0dip"
+                android:layout_weight="1.0">
+
+                <ImageView
+                    android:id="@+id/ProfilePhoto"
+                    android:layout_width="184dp"
+                    android:layout_height="184dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="16.0dip"
+                    android:background="@drawable/dpk_movie_ticks_logo_final"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/tv_login_signUp"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/ProfilePhoto"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="21dp"
+                    android:layout_weight="1.0"
+                    android:visibility="gone"
+                    android:ellipsize="end"
+                    android:background="@drawable/tv_border_only_outline"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="Login/SignUp"
+                    android:textColor="#FFFF"
+                    android:textSize="20.0dip" />
+            <LinearLayout
+                android:id="@+id/ll_userInfo"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:paddingBottom="0dp"
+                android:visibility="gone"
+                android:background="@drawable/tv_border_only_outline"
+                android:layout_below="@id/ProfilePhoto"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:text="User Info"/>
+                <TextView
+                    android:id="@+id/fullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@android:color/transparent"
+                    android:drawableLeft="@drawable/user"
+                    android:drawablePadding="8dp"
+                    android:gravity="center_vertical"
+                    android:hint="@string/fullName"
+                    android:layout_below="@id/ProfilePhoto"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="16sp"
+                    android:drawableStart="@drawable/user" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="@color/white_greyish" />
+
+                <TextView
+                    android:id="@+id/userEmailId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@android:color/transparent"
+                    android:drawableLeft="@drawable/email"
+                    android:drawablePadding="8dp"
+                    android:gravity="center_vertical"
+                    android:hint="@string/email"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="16sp"
+                    android:drawableStart="@drawable/email" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="@color/white_greyish" />
+
+                <TextView
+                    android:id="@+id/mobileNumber"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:color/transparent"
+                    android:drawableLeft="@drawable/phone"
+                    android:drawablePadding="8dp"
+                    android:gravity="center_vertical"
+                    android:hint="@string/mobileNumber"
+                    android:inputType="phone"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/ProfileMoviePass"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="16.0dip"
+                android:paddingRight="15.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="55.0dip"
+                android:layout_weight="1.0">
+                <ImageView
+                    android:layout_width="20.0dip"
+                    android:layout_height="20.0dip"
+                    android:layout_marginRight="16.0dip"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/icon_profile_pass"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:layout_width="164dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip"
+                    android:layout_weight="1.0"
+                    android:ellipsize="end"
+                    android:gravity=""
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:text="My Movie Pass"
+                    android:textSize="15.0dip" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="➤"
+                    android:layout_marginLeft="0dp"
+                    android:textSize="15.0dip"
+                    android:layout_marginStart="5dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ProfileOrders"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="16.0dip"
+                android:paddingRight="15.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="55.0dip"
+                android:layout_weight="1.0">
+                <ImageView
+                    android:layout_width="20.0dip"
+                    android:layout_height="20.0dip"
+                    android:background="@drawable/icon_profile_order"
+                    android:layout_marginRight="16.0dip"
+                    android:scaleType="centerCrop"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:layout_width="164dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip"
+                    android:layout_weight="1.0"
+                    android:ellipsize="end"
+                    android:textColor="#000000"
+                    android:text="My Orders"
+                    android:singleLine="true"
+                    android:textSize="15.0dip" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="➤"
+                    android:layout_marginLeft="0dp"
+                    android:textSize="15.0dip"
+                    android:layout_marginStart="5dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ProfileOffers"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="16.0dip"
+                android:paddingRight="15.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="55.0dip"
+                android:visibility="gone"
+                android:layout_weight="1.0">
+                <ImageView
+                    android:layout_width="20.0dip"
+                    android:layout_height="20.0dip"
+                    android:background="@drawable/icon_profile_offer"
+                    android:layout_marginRight="16.0dip"
+                    android:scaleType="centerCrop"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:layout_width="164dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip"
+                    android:layout_weight="1.0"
+                    android:ellipsize="end"
+                    android:textColor="#000000"
+                    android:text="Offers"
+                    android:singleLine="true"
+                    android:textSize="15.0dip" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="➤"
+                    android:layout_marginLeft="0dp"
+                    android:textSize="15.0dip"
+                    android:layout_marginStart="5dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ProfileNotification"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="16.0dip"
+                android:paddingRight="15.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="55.0dip"
+                android:visibility="gone"
+                android:layout_weight="1.0">
+                <ImageView
+                    android:layout_width="20.0dip"
+                    android:layout_height="20.0dip"
+                    android:background="@drawable/icon_profile_message"
+                    android:layout_marginRight="16.0dip"
+                    android:scaleType="centerCrop"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:id="@+id/name_of_item_in_profile"
+                    android:layout_width="164dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip"
+                    android:layout_weight="1.0"
+                    android:ellipsize="end"
+                    android:textColor="#000000"
+                    android:text="Notification"
+                    android:singleLine="true"
+                    android:textSize="15.0dip" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="➤"
+                    android:layout_marginLeft="0dp"
+                    android:textSize="15.0dip"
+                    android:layout_marginStart="5dp" />
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/ProfileSettings"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="16.0dip"
+                android:paddingRight="15.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="55.0dip"
+                android:layout_weight="1.0">
+                <ImageView
+                    android:layout_width="20.0dip"
+                    android:layout_height="20.0dip"
+                    android:background="@drawable/icon_profile_setting"
+                    android:layout_marginRight="16.0dip"
+                    android:scaleType="centerCrop"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:layout_width="164dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip"
+                    android:layout_weight="1.0"
+                    android:ellipsize="end"
+                    android:textColor="#000000"
+                    android:text="Settings"
+                    android:singleLine="true"
+                    android:textSize="15.0dip" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="➤"
+                    android:layout_marginLeft="0dp"
+                    android:textSize="15.0dip"
+                    android:layout_marginStart="5dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ProfilePrivacy"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="16.0dip"
+                android:paddingRight="15.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="55.0dip"
+                android:layout_weight="1.0">
+                <ImageView
+                    android:layout_width="20.0dip"
+                    android:layout_height="20.0dip"
+                    android:background="@drawable/icon_profile_privacy"
+                    android:layout_marginRight="16.0dip"
+                    android:scaleType="centerCrop"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:layout_width="164dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip"
+                    android:layout_weight="1.0"
+                    android:ellipsize="end"
+                    android:textColor="#000000"
+                    android:text="Privacy Policy"
+                    android:singleLine="true"
+                    android:textSize="15.0dip" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="➤"
+                    android:layout_marginLeft="0dp"
+                    android:textSize="15.0dip"
+                    android:layout_marginStart="5dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ProfileHelpFeedback"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="16.0dip"
+                android:paddingRight="15.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="55.0dip"
+                android:layout_weight="1.0">
+                <ImageView
+                    android:layout_width="20.0dip"
+                    android:layout_height="20.0dip"
+                    android:background="@drawable/icon_profile_help"
+                    android:layout_marginRight="16.0dip"
+                    android:scaleType="centerCrop"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:layout_width="164dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip"
+                    android:layout_weight="1.0"
+                    android:ellipsize="end"
+                    android:textColor="#000000"
+                    android:text="Help &amp; Feedback"
+                    android:singleLine="true"
+                    android:textSize="15.0dip" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="➤"
+                    android:layout_marginLeft="0dp"
+                    android:textSize="15.0dip"
+                    android:layout_marginStart="5dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+

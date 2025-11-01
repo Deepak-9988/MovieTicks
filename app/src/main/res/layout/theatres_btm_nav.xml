@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/theatres_drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+        <!-- Our content goes here -->
+
+
+        <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MoviesBtmNav">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_theatres"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/curve_toolbar"
+                android:gravity="center_horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:menu="@menu/theatres_toolbar"
+                app:navigationIcon="@drawable/ic_edit_location_black_24dp"
+                app:titleTextColor="#FFFFFF">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+
+                    android:text="Theatres"
+                    android:textColor="#FFFF"
+                    android:textSize="20dp"
+                     />
+            </androidx.appcompat.widget.Toolbar>
+<ListView
+    android:layout_below="@id/toolbar_theatres"
+    android:id="@+id/listViewTheatres"
+    android:layout_marginTop="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+
+            <FrameLayout
+                android:id="@+id/FrameLayout"
+                android:layout_below="@id/toolbar_theatres"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp">
+
+            </FrameLayout>
+
+        </RelativeLayout>
+
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/theatres_nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start|left"
+        app:headerLayout="@layout/navigation_header"/>
+    <!-- app:menu="@menu/navigation_items"-->
+</androidx.drawerlayout.widget.DrawerLayout>

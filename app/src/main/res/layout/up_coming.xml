@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".NowShowing">
+
+    <LinearLayout
+        android:id="@+id/ll_no_upComingMovies"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp"
+        android:padding="30dp"
+        android:visibility="gone"
+        android:background="@drawable/rounded_corner"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/empty_state" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:text="No UpComing Movies Found"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_materialProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+        <com.agrawalsuneet.dotsloader.loaders.TashieLoader
+            android:id="@+id/materialProgressBar"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp"
+            app:tashieloader_animDelay="50"
+            app:tashieloader_animDur="250"
+            app:tashieloader_dotsColor="@color/colorPrimary"
+            app:tashieloader_dotsDist="10dp"
+            app:tashieloader_dotsRadius="15dp"
+            app:tashieloader_interpolator="@android:anim/accelerate_interpolator"
+            app:tashieloader_noOfDots="7" />
+
+        <com.agrawalsuneet.dotsloader.loaders.TashieLoader
+            android:id="@+id/materialProgressBar2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            app:tashieloader_animDelay="50"
+            app:tashieloader_animDur="300"
+            app:tashieloader_dotsColor="@color/colorPrimary"
+            app:tashieloader_dotsDist="10dp"
+            app:tashieloader_dotsRadius="15dp"
+            app:tashieloader_interpolator="@android:anim/accelerate_interpolator"
+            app:tashieloader_noOfDots="7" />
+        <com.agrawalsuneet.dotsloader.loaders.TashieLoader
+            android:id="@+id/materialProgressBar3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            app:tashieloader_animDelay="50"
+            app:tashieloader_animDur="250"
+            app:tashieloader_dotsColor="@color/colorPrimary"
+            app:tashieloader_dotsDist="10dp"
+            app:tashieloader_dotsRadius="15dp"
+            app:tashieloader_interpolator="@android:anim/accelerate_interpolator"
+            app:tashieloader_noOfDots="7" />
+
+
+        <com.agrawalsuneet.dotsloader.loaders.TashieLoader
+            android:id="@+id/materialProgressBar4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            app:tashieloader_animDelay="50"
+            app:tashieloader_animDur="300"
+            app:tashieloader_dotsColor="@color/colorPrimary"
+            app:tashieloader_dotsDist="10dp"
+            app:tashieloader_dotsRadius="15dp"
+            app:tashieloader_interpolator="@android:anim/accelerate_interpolator"
+            app:tashieloader_noOfDots="7" />
+
+        <com.agrawalsuneet.dotsloader.loaders.TashieLoader
+            android:id="@+id/materialProgressBar5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            app:tashieloader_animDelay="50"
+            app:tashieloader_animDur="250"
+            app:tashieloader_dotsColor="@color/colorPrimary"
+            app:tashieloader_dotsDist="10dp"
+            app:tashieloader_dotsRadius="15dp"
+            app:tashieloader_interpolator="@android:anim/accelerate_interpolator"
+            app:tashieloader_noOfDots="7" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listviewMovies"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookTickets">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_mInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/mainTheme2"
+        android:background="@drawable/tv_border"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <ImageView
+            android:id="@+id/MovieImg"
+            android:layout_width="68dp"
+            android:layout_height="88dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="9dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="10dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/Mname"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="9dp"
+            android:layout_toEndOf="@+id/MovieImg"
+            android:layout_toRightOf="@+id/MovieImg"
+            android:singleLine="true"
+            android:text="TextView"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="16dp"
+            tools:layout_editor_absoluteX="76dp"
+            tools:layout_editor_absoluteY="66dp" />
+
+        <TextView
+            android:id="@+id/mExperience"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="29dp"
+            android:layout_marginTop="80dp"
+            android:layout_toEndOf="@+id/mCertificate"
+            android:layout_toRightOf="@+id/mCertificate"
+            android:background="@drawable/tv_border"
+            android:text="2D"
+            android:textColor="@color/mainTheme"
+            android:textSize="7dp"
+            tools:layout_editor_absoluteX="166dp"
+            tools:layout_editor_absoluteY="229dp" />
+
+        <TextView
+            android:id="@+id/mCertificate"
+            android:layout_width="18dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginRight="0dp"
+            android:layout_toEndOf="@+id/MovieImg"
+            android:layout_toRightOf="@+id/MovieImg"
+            android:background="@drawable/tv_border"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:text="Certificate"
+            android:textColor="@color/mainTheme"
+            android:textAlignment="center"
+            android:textSize="7dp"
+            tools:layout_editor_absoluteX="166dp"
+            tools:layout_editor_absoluteY="229dp" />
+
+        <TextView
+            android:id="@+id/mDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="29dp"
+            android:layout_marginTop="80dp"
+            android:textColor="@color/mainTheme"
+            android:layout_toEndOf="@+id/mExperience"
+            android:layout_toRightOf="@+id/mExperience"
+            android:background="@drawable/tv_border"
+            android:text="2:24:52"
+            android:textSize="7dp"
+            tools:layout_editor_absoluteX="166dp"
+            tools:layout_editor_absoluteY="229dp" />
+
+
+        <TextView
+            android:id="@+id/mlanguage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="58dp"
+            android:layout_toEndOf="@+id/MovieImg"
+            android:layout_toRightOf="@+id/MovieImg"
+            android:background="@drawable/tv_border"
+            android:text="Language"
+            android:textColor="@color/mainTheme"
+            android:textSize="9dp"
+            tools:layout_editor_absoluteX="166dp"
+            tools:layout_editor_absoluteY="229dp" />
+
+        <TextView
+            android:id="@+id/Mcast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="36dp"
+            android:layout_toEndOf="@+id/MovieImg"
+            android:layout_toRightOf="@+id/MovieImg"
+            android:singleLine="true"
+            android:text="TextView"
+            android:textSize="12dp"
+            tools:layout_editor_absoluteX="166dp"
+            tools:layout_editor_absoluteY="229dp" />
+
+
+    </RelativeLayout>
+<HorizontalScrollView
+    android:id="@+id/hsv"
+    android:layout_below="@id/rl_mInfo"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/ll_dates"
+        android:orientation="horizontal"
+        android:background="#FFEADA"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"/>
+</HorizontalScrollView>
+    <ListView
+        android:layout_below="@id/hsv"
+        android:layout_marginTop="10dp"
+        android:id="@+id/listViewTheatresShowtimes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+</RelativeLayout>

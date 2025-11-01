@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <LinearLayout
+        android:id="@+id/ll_order_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/rounded_corner"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_mInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvOrderSummary"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/MovieImg"
+                android:layout_width="68dp"
+                android:layout_height="88dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="9dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginBottom="10dp"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/Mname"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="9dp"
+                android:layout_toEndOf="@+id/MovieImg"
+                android:layout_toRightOf="@+id/MovieImg"
+                android:singleLine="true"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="16dp"
+                 />
+
+            <TextView
+                android:id="@+id/mExperience"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="29dp"
+                android:layout_marginTop="80dp"
+                android:layout_toEndOf="@+id/mCertificate"
+                android:layout_toRightOf="@+id/mCertificate"
+                android:background="@drawable/tv_border"
+                android:text="2D"
+                android:textSize="7dp"
+                tools:layout_editor_absoluteX="166dp"
+                tools:layout_editor_absoluteY="229dp" />
+
+            <TextView
+                android:id="@+id/mCertificate"
+                android:layout_width="18dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginRight="0dp"
+                android:layout_toEndOf="@+id/MovieImg"
+                android:layout_toRightOf="@+id/MovieImg"
+                android:background="@drawable/tv_border"
+                android:gravity="center_horizontal"
+                android:singleLine="true"
+                android:text="Certificate"
+                android:textAlignment="center"
+                android:textSize="7dp"
+                tools:layout_editor_absoluteX="166dp"
+                tools:layout_editor_absoluteY="229dp" />
+
+            <TextView
+                android:id="@+id/mlanguage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="58dp"
+                android:layout_toEndOf="@+id/MovieImg"
+                android:layout_toRightOf="@+id/MovieImg"
+                android:background="@drawable/tv_border"
+                android:text="Language"
+                android:textColor="@color/mainTheme"
+                android:textSize="9dp"
+                tools:layout_editor_absoluteX="166dp"
+                tools:layout_editor_absoluteY="229dp" />
+
+            <TextView
+                android:id="@+id/Mcast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="36dp"
+                android:layout_toEndOf="@+id/MovieImg"
+                android:layout_toRightOf="@+id/MovieImg"
+                android:singleLine="true"
+                android:text="TextView"
+                android:textSize="12dp"
+                tools:layout_editor_absoluteX="166dp"
+                tools:layout_editor_absoluteY="229dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="Date &amp; Time"
+                android:textColor="@color/colorPrimary"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/tv_date_info_summary"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="05:35 PM, Tue, 25 Dec"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:text="Theatre"
+            android:textColor="@color/colorPrimary"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/tv_theatreName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="Tillium Mall"
+            android:textColor="#000000"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/tv_theatreAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:text="Tillium Mall, Amritsar"
+            android:textColor="#000000"
+            android:textSize="14dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:text="Ticket Details"
+                android:textColor="@color/colorPrimary"
+                android:textSize="10dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:text="Seats Selected"
+                android:textColor="@color/colorPrimary"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/tv_tickets_details"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="Tickets"
+                android:textColor="#000000"
+                android:textSize="14dp" />
+
+            <HorizontalScrollView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_seats_selected"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:paddingRight="12dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text=""
+
+                    android:textColor="#000000"
+                    android:textSize="14dp" />
+
+            </HorizontalScrollView>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="Price Paid"
+            android:textColor="@color/colorPrimary"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/tv_price_info_summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="price Calculation"
+            android:textColor="#000000"
+            android:textSize="17dp" />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
